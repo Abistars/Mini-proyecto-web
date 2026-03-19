@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+.containar{
+     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "header"
+    "content"
+    ;
+    height: 100vh;
+}
+
+.header{
+    grid-area: content;
+}
+
+.item content{
+    width: 100;
+    height: 400px;
+  object-fit: cover;
+}
