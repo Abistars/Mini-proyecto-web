@@ -2,23 +2,47 @@
     box-sizing: border-box;
 }
 
-.containar{
-     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+.container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
-    "header"
-    "content"
+    "header header"
+    "sidebar content"
+    "footer footer"
     ;
     height: 100vh;
 }
 
 .header{
+    grid-area: header;
+}
+.content{
     grid-area: content;
 }
+.sidebar{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
+}
 
-.item content{
-    width: 100;
-    height: 400px;
-  object-fit: cover;
+.card{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 60px;
+    width: 90%;
+    margin-left: 80px;
+    font-size: 30px;
+    background: linear-gradient(to right, #2174d4, #b5b5b5);
+}
+.card p{
+    font-size: 22px;
+    color: aliceblue;
+    margin: 0 auto;
+    align-items: left;
+    justify-content: left;
+}
+.card h2{
+    margin: auto;
 }
