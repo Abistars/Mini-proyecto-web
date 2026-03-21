@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+}
+
+.header-title {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-back {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+@media (max-width: 576px) {
+    .header-title {
+        font-size: 20px;
+        top: 10px;
+        left: 15px;
+    }
+}
