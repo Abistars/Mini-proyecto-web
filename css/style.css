@@ -44,17 +44,44 @@ body{
 .info-content h2 {
     color: white;
 }
+
 .footer-1 {
+    margin-top: 60px;
+    padding: 20px;
+    background: linear-gradient(135deg, #111827, #1f2937);
     color: #f5fbff;
-    margin-top: 40px;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .footer-1 a {
     color: #b5b5b5;
     text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
 }
+
+.footer-1 a:hover {
+    color: #ffffff;
+}
+
+.footer-1 p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .footer-1 {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .footer-1 a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
 @media (min-width: 768px) {
     .content {
         width: 100%;
