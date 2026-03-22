@@ -6,108 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini proyecto web</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-dark text-light">
+    <div class="container">
+        <div class="nav">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Roblox</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">Roblox</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="inicio/inicio.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="soporte/soporte.html">Soporte</a>
-                    </li>
-                </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="inicio/inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="soporte/soporte.html">Soporte</a>
+                            </li>
+                        </ul>
 
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar">
-                    <button class="btn btn-outline-light">Buscar</button>
-                </form>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar">
+                            <button class="btn btn-outline-light">Buscar</button>
+                        </form>
+                    </div>
+
+                    <button class="btn btn-dark ms-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebar">
+                        Explorar
+                    </button>
+            </nav>
+
+            <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="sidebar">
+                <div class="offcanvas-header">
+                    <h5>Explorar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <h6>🎮 Juegos destacados</h6>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">
+                            <a href="Brookhaven/index2.html">Brookhaven</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="Adopy-me/index3.html">Adopt Me</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="Box-fruits/index4.html">Blox Fruits</a>
+                        </li>
+                    </ul>
+
+                    <h6>🔥 Tendencias</h6>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">
+                            <a href="Anime_fighters/index.html">Anime Fighters</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="Pet_simulator/index.html">Pet Simulator</a>
+                        </li>
+                        <li class="list-group-item">Tower of Hell</li>
+                    </ul>
+
+                    <h6>🌟 Experiencias</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Roleplay</li>
+                        <li class="list-group-item">Obbys</li>
+                        <li class="list-group-item">Simuladores</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header">
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="https://wallpaperaccess.com/full/4153868.jpg" class="d-block w-100 img-fluid">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://halvamedia.sovcombank.ru/foto-1-robloks-1718953620V8F7q.jpg"
+                                class="d-block w-100 img-fluid">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://wallpaperaccess.com/full/4153849.jpg" class="d-block w-100 img-fluid">
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-            <button class="btn btn-dark ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-                Explorar
-            </button>
-    </nav>
-
-    <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="sidebar">
-        <div class="offcanvas-header">
-            <h5>Explorar</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-        </div>
-
-        <div class="offcanvas-body">
-            <h6>🎮 Juegos destacados</h6>
-            <ul class="list-group mb-3">
-                <li class="list-group-item">Brookhaven</li>
-                <li class="list-group-item">Adopt Me</li>
-                <li class="list-group-item">Blox Fruits</li>
-            </ul>
-
-            <h6>🔥 Tendencias</h6>
-            <ul class="list-group mb-3">
-                <li class="list-group-item">Anime Fighters</li>
-                <li class="list-group-item">Pet Simulator</li>
-                <li class="list-group-item">Tower of Hell</li>
-            </ul>
-
-            <h6>🌟 Experiencias</h6>
-            <ul class="list-group">
-                <li class="list-group-item">Roleplay</li>
-                <li class="list-group-item">Obbys</li>
-                <li class="list-group-item">Simuladores</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                <img src="https://wallpaperaccess.com/full/4153868.jpg" class="d-block w-100 img-fluid">
+            <div class="content">
+                <div class="card">
+                    <div class="info-content">
+                        <h2 class="mb-3">Conoce más sobre Roblox</h2>
+                        <p>
+                            Roblox es una plataforma de videojuegos en línea y un sistema de creación de videojuegos
+                            desarrollado por Roblox Corporation que permite a los usuarios programar y jugar juegos
+                            creados por
+                            ellos mismos o por otros usuarios. Fue creada por David Baszucki y Erik Cassel en 2003 y
+                            lanzada al
+                            público en 2006. A febrero de 2025, la plataforma reportó un promedio de 85,3 millones de
+                            usuarios
+                            activos diarios.
+                        </p>
+                    </div>
+                    <img src="img/image.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="info-content">
+                        <h2>Novedades sobre roblox</h2>
+                        <p>
+                            Roblox es una plataforma que se encuentra en constante evolución. Frecuentemente presenta
+                            nuevas
+                            experiencias, eventos especiales, accesorios para avatares y mejoras en sus funciones. Estas
+                            novedades
+                            permiten que los usuarios disfruten de contenido actualizado y de nuevas formas de jugar,
+                            crear
+                            e
+                            interactuar dentro de la comunidad.
+                        </p>
+                    </div>
+                    <img src="img/image2.png" alt="">
+                </div>
             </div>
 
-            <div class="carousel-item">
-                <img src="https://halvamedia.sovcombank.ru/foto-1-robloks-1718953620V8F7q.jpg"
-                    class="d-block w-100 img-fluid">
-            </div>
+            <footer>
+                <p class="mb-1">© 2026 Roblox Landing Page</p>
+                <small class="text-secondary">Diseñado con Bootstrap</small>
+                <a href="https://www.roblox.com/es/home">Visita roblox</a>
+                <h3>Terminos</h3>
+                <p>
+                    El uso de esta página es únicamente con fines informativos y educativos.
+                </p>
+            </footer>
 
-            <div class="carousel-item">
-                <img src="https://wallpaperaccess.com/full/4153849.jpg" class="d-block w-100 img-fluid">
-            </div>
-
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
         </div>
-    </div>
-
-    <div class="container my-5">
-        <div class="card bg-secondary text-light shadow-lg border-0 p-4 text-center">
-            <h2 class="mb-3">Conoce más sobre Roblox</h2>
-            <p>
-                Roblox es una plataforma de videojuegos en línea y un sistema de creación de videojuegos
-                desarrollado por Roblox Corporation que permite a los usuarios programar y jugar juegos creados por
-                ellos mismos o por otros usuarios. Fue creada por David Baszucki y Erik Cassel en 2003 y lanzada al
-                público en 2006. A febrero de 2025, la plataforma reportó un promedio de 85,3 millones de usuarios
-                activos diarios.
-            </p>
-        </div>
-    </div>
-
-    <footer class="bg-black text-center text-light py-4 mt-auto">
-        <p class="mb-1">© 2026 Roblox Landing Page</p>
-        <small class="text-secondary">Diseñado con Bootstrap</small>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
