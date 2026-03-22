@@ -66,15 +66,15 @@ body{
         padding: 20px;
     }
 
-    .content_info{
+    .content-info{
         max-width: 100%;
         align-items: center;
     }
-    .content_info h2{
+    .content-info h2{
         font-size: 22px;
     }
 
-    .content_info p{
+    .content-info p{
         font-size: 16px;
     }
     .content img{
